@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkyMet hesap ve veri silme talebi">
+  <title>SkyMet Hesap Silme</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; color: #152238; background: #f5f8fb; }
+    main { width: min(680px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 72px; }
+    h1 { margin: 0 0 10px; font-size: 30px; letter-spacing: 0; }
+    h2 { margin: 28px 0 8px; font-size: 20px; letter-spacing: 0; }
+    a { color: #006f70; font-weight: 650; }
+    .button { display: inline-flex; margin: 12px 0; padding: 12px 16px; color: white; background: #006f70; border-radius: 6px; text-decoration: none; }
+    .note { padding: 14px 16px; border-left: 4px solid #00a896; background: #e7f4f2; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #edf5fb; background: #081f36; }
+      a { color: #65d5ca; }
+      .button { color: #05201f; background: #65d5ca; }
+      .note { background: #12384a; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>SkyMet hesap ve veri silme</h1>
+  <p>SkyMet ve Hexagon Technology, kullanıcıların hesaplarını ve ilişkili bulut verilerini kalıcı olarak silebilmesini sağlar.</p>
+
+  <h2>Uygulama içinden silme</h2>
+  <p><strong>Menü &gt; Hesap ve Senkronizasyon &gt; Bulut Hesabını Kalıcı Sil</strong> yolunu izleyin. Onaydan sonra Firebase hesabınız ve SkyMet bulut yedeğiniz silinir.</p>
+
+  <h2>Uygulamaya erişemiyorsanız</h2>
+  <p>Aşağıdaki bağlantıyla destek adresine, konu kısmını değiştirmeden hesabınızda kullandığınız Google e-posta adresinden talep gönderin.</p>
+  <a class="button" href="mailto:mustafamuftuoglu@gmail.com?subject=SkyMet%20Hesap%20Silme%20Talebi">Hesap silme talebi gönder</a>
+  <p class="note">Hesap sahipliğini doğrulamak için ek bilgi istenebilir. Doğrulanan taleplerde Firebase kullanıcı hesabı ve ilişkili SkyMet bulut belgesi kalıcı olarak silinir.</p>
+
+  <h2>Silinen ve korunan veriler</h2>
+  <p>Google ile bağlantılı Firebase Authentication hesabı ile favoriler, seçili konum ve uygulama tercihlerinden oluşan Cloud Firestore yedeği silinir. Uygulama cihazda kuruluysa yerel ayarlar uygulama verileri temizlenene veya uygulama kaldırılana kadar cihazda kalabilir.</p>
+
+  <p><a href="index.html">Gizlilik politikasına dön</a></p>
+</main>
+</body>
+</html>

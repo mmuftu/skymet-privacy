@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkyMet uygulaması gizlilik politikası">
+  <title>SkyMet Gizlilik Politikası</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #152238;
+      background: #f5f8fb;
+    }
+    main { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 40px 0 64px; }
+    header { display: flex; align-items: center; gap: 18px; padding-bottom: 22px; border-bottom: 1px solid #cad5df; }
+    header img { width: 76px; height: 76px; border-radius: 8px; }
+    h1 { margin: 0; font-size: 30px; letter-spacing: 0; }
+    h2 { margin: 30px 0 8px; font-size: 20px; letter-spacing: 0; }
+    p { margin: 0 0 12px; }
+    a { color: #006f70; font-weight: 650; }
+    .meta { color: #526273; }
+    .actions { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 30px; padding-top: 20px; border-top: 1px solid #cad5df; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #edf5fb; background: #081f36; }
+      header, .actions { border-color: #35506a; }
+      a { color: #65d5ca; }
+      .meta { color: #b8c7d6; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../assets/app_icon.png" alt="SkyMet logosu">
+    <div>
+      <h1>SkyMet Gizlilik Politikası</h1>
+      <div class="meta">Son güncelleme: 26 Ağustos 2026</div>
+    </div>
+  </header>
+
+  <h2>Veri sorumlusu</h2>
+  <p>SkyMet, Hexagon Technology tarafından geliştirilir. Gizlilik ve veri talepleri için <a href="mailto:mustafamuftuoglu@gmail.com">mustafamuftuoglu@gmail.com</a> adresinden iletişime geçebilirsiniz.</p>
+
+  <h2>İşlenen veriler</h2>
+  <p>Uygulama; yerel hava durumunu göstermek için kesin veya yaklaşık cihaz konumunu, kullanıcı izin verdiğinde Google hesap adı ve e-posta adresini, favori konumları, uygulama ayarlarını, bildirim tercihlerini ve radar tercihlerini işler.</p>
+
+  <h2>Verilerin kullanım amacı</h2>
+  <p>Konum verisi yakındaki hava tahminini ve yer adını belirlemek; hesap bilgisi isteğe bağlı bulut senkronizasyonunu sağlamak; tercihler ise uygulamayı, widgeti ve hava bildirimlerini kullanıcının seçimine göre çalıştırmak amacıyla kullanılır.</p>
+
+  <h2>Hizmet sağlayıcılar</h2>
+  <p>Hava ve hava kalitesi verileri Open-Meteo, konum adlandırma BigDataCloud ve OpenStreetMap Nominatim, radar RainViewer, uydu görüntüsü EUMETSAT, harita OpenFreeMap/OpenStreetMap üzerinden alınır. Google Firebase Authentication ve Cloud Firestore, kullanıcı açıkça Google hesabını bağladığında kimlik doğrulama ve bulut yedekleme için kullanılır. Bu sağlayıcılara hizmetin çalışması için IP adresi, istek bilgileri veya koordinatlar iletilebilir.</p>
+
+  <h2>Saklama ve güvenlik</h2>
+  <p>Yerel tercihler cihazda uygulama kaldırılana veya veriler temizlenene kadar saklanır. Bulut verileri hesap silinene kadar Firebase üzerinde saklanır. Ağ iletişimi HTTPS ile şifrelenir. SkyMet kişisel verileri satmaz ve uygulamanın bu sürümü reklam içermez.</p>
+
+  <h2>Kullanıcı tercihleri</h2>
+  <p>Konum ve bildirim izinleri Android ayarlarından geri alınabilir. Google hesabı bağlamak isteğe bağlıdır; hesap bağlanmadan temel hava durumu özellikleri kullanılabilir.</p>
+
+  <h2 id="hesap-silme">Hesap ve veri silme</h2>
+  <p>Uygulamada <strong>Menü &gt; Hesap ve Senkronizasyon &gt; Bulut Hesabını Kalıcı Sil</strong> yolu, Firebase kullanıcı hesabını ve ilişkili SkyMet bulut yedeğini kalıcı olarak siler. Cihazdaki yerel ayarlar, kullanıcı uygulama verilerini temizleyene veya uygulamayı kaldırana kadar korunur.</p>
+  <p>Uygulamaya erişemiyorsanız <a href="hesap-silme.html">harici hesap silme talebi sayfasını</a> kullanabilirsiniz.</p>
+
+  <h2>Çocukların gizliliği</h2>
+  <p>SkyMet özellikle 13 yaş altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamayı amaçlamaz.</p>
+
+  <h2>Politika değişiklikleri</h2>
+  <p>Bu politika uygulamanın veri kullanımı değiştiğinde güncellenir. Güncel sürüm bu sayfada yayımlanır.</p>
+
+  <div class="actions">
+    <a href="hesap-silme.html">Hesap silme talebi</a>
+    <a href="https://www.instagram.com/hexagon_technology/">Hexagon Technology</a>
+  </div>
+</main>
+</body>
+</html>
